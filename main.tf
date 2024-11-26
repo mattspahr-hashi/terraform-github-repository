@@ -14,4 +14,6 @@ resource "github_repository_file" "readme" {
   commit_author       = "Matt Spahr"
   commit_email        = "matt.spahr@hashicorp.com"
   overwrite_on_create = true
+
+  depends_on = [github_repository.gh_repo]
 }
