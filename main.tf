@@ -1,6 +1,7 @@
 resource "github_repository" "gh_repo" {
   name       = var.repository_name
   visibility = var.visibility
+  auto_init  = true
 }
 
 resource "github_repository_file" "readme" {
