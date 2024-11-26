@@ -4,6 +4,6 @@ variable "repository_name" {
 }
 
 variable "visibility" {
-  type        = bool
-  description = "Visibility Settings of Repository"
+  type        = string
+  description = "Visibility settings of the repository"
 }
