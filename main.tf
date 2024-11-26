@@ -1,11 +1,6 @@
 resource "github_repository" "gh_repo" {
   name       = var.repository_name
   visibility = var.visibility
-
-  # Enable GitHub pages
-  pages {
-    build_type = "workflow"
-  }
 }
 
 resource "github_repository_file" "readme" {
